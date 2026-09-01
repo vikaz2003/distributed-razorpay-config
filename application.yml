@@ -10,7 +10,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    username: vikas
+    username: postgres
     password: 122003
     driver-class-name: org.postgresql.Driver
   data:
