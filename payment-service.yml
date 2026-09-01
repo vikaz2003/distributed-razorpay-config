@@ -1,0 +1,16 @@
+server:
+  port: 9020
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/razorpay-payment-db
+  cloud:
+    openfeign:
+      client:
+        config:
+          merchant-service:
+            connectTimeout: 2000
+            readTimeout: 3000
+          vault-service:
+            connectTimeout: 2000
+            readTimeout: 5000
